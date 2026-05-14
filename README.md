@@ -77,7 +77,7 @@ CMS / E-commerce:
 1. Open `chrome://extensions`
 2. Enable **Developer mode**
 3. Click **Load unpacked**
-4. Select this folder (`EXT`)
+4. Select this folder (`EXT/chrome`)
 
 ## Load in Firefox
 
@@ -87,8 +87,8 @@ CMS / E-commerce:
 
 ## Project files
 
-- `manifest.json` - extension configuration
-- `popup.html` - popup UI
-- `popup.css` - popup styles
-- `popup.js` - detection logic + rendering
+- `chrome/manifest.json` - Chrome extension manifest
+- `chrome/popup.html` - Chrome popup UI
+- `chrome/popup.css` - Chrome popup styles
+- `chrome/popup.js` - Chrome detection logic + rendering
 - `firefox/manifest.json` - Firefox extension manifest
