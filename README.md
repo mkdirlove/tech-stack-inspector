@@ -1,6 +1,6 @@
-# Tech Stack Inspector (Chrome Extension)
+# Tech Stack Inspector (Browser Extension)
 
-A simple Chrome extension (Manifest V3) that inspects the active tab and detects common web technologies, similar to Wappalyzer-style fingerprinting.
+A browser extension that inspects the active tab and detects common web technologies, similar to Wappalyzer-style fingerprinting.
 
 ## Features
 
@@ -79,9 +79,16 @@ CMS / E-commerce:
 3. Click **Load unpacked**
 4. Select this folder (`EXT`)
 
+## Load in Firefox
+
+1. Open `about:debugging#/runtime/this-firefox`
+2. Click **Load Temporary Add-on...**
+3. Select `/home/user/EXT/firefox/manifest.json`
+
 ## Project files
 
 - `manifest.json` - extension configuration
 - `popup.html` - popup UI
 - `popup.css` - popup styles
 - `popup.js` - detection logic + rendering
+- `firefox/manifest.json` - Firefox extension manifest

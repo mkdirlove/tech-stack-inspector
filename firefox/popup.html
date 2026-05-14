@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Stack Inspector</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="header">
+        <div>
+          <h1>Tech Stack Inspector</h1>
+          <p id="target" class="muted">Checking current tab...</p>
+        </div>
+        <div class="theme-switch" role="group" aria-label="Theme switch">
+          <button id="theme-light" class="theme-btn" type="button" aria-pressed="false">
+            Light
+          </button>
+          <button id="theme-dark" class="theme-btn" type="button" aria-pressed="false">
+            Dark
+          </button>
+        </div>
+      </header>
+
+      <section id="state" class="state">Scanning...</section>
+      <ul id="results" class="results" aria-live="polite"></ul>
+      <footer class="footer-note">
+        Made with ❤️ by
+        <a
+          class="footer-link"
+          href="https://github.com/mkdirlove"
+          target="_blank"
+          rel="noopener noreferrer"
+          >mkdirlove</a
+        >
+      </footer>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+  </html>
